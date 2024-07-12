@@ -26,6 +26,12 @@ app.add_middleware(
   allow_methods=["*"],
   allow_headers=["*"],
 )
+
+@app.get("/",tags=["root"])
+async def root():
+  return{"data":"https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
+
+
 #
 # app.include_router(user_rout)
 app.include_router(user_api_router)
