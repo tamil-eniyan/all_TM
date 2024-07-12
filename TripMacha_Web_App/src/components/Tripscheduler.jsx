@@ -20,7 +20,7 @@ const Tripscheduler = () => {
 
     const handleSubmit = async () => {
         try {
-            const url = 'http://127.0.0.1:8000/mltravel';
+            const url = 'https://tripmacha-tamil-eniyan-t-s-projects.vercel.app/mltravel';
             const headers = {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
