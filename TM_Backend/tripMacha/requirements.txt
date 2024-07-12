@@ -1,0 +1,12 @@
+pip==21.1.2
+urllib3<2.0
+firebase_admin
+fastapi
+uvicorn
+pymongo
+typing 
+pydantic==1.10.14
+openai
+googlema
+ps
+requests
