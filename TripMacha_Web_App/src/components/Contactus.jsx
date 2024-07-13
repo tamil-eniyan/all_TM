@@ -8,7 +8,7 @@ const Contactus = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const feedbackurl = 'https://tripmacha-tamil-eniyan-t-s-projects.vercel.app/feedback';
+            const feedbackurl = 'https://all-tm.onrender.com/feedback';
             const headers = {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
