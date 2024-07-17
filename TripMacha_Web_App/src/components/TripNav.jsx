@@ -110,7 +110,7 @@ const TripNav = () => {
                 <Link to="/" className="navbar-brand p-0">
                     <h1 className="text-primary m-0"><span style={{ color: '#37249D' }}><i className="fa fa-map-marked-alt me-3"></i>Trip</span><span style={{ color: "red" }}>Macha</span></h1>
                 </Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button hidden className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span className="fa fa-bars"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarCollapse">
@@ -134,6 +134,7 @@ const TripNav = () => {
                             </Link>
                             <Link
                                 to="/#services"
+                                hidden 
                                 className={`nav-item nav-link ${activeLink === 'services' ? 'active' : ''}`}
                                 onClick={() => scrollToSection(services, 'services')}
                             >
@@ -179,8 +180,8 @@ const TripNav = () => {
                                             </div>
                                             <hr />
                                             <div className="text-center">
-                                                <Link to="/Liked" className="text-decoration-none text-capitalize linkhover"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faThumbsUp} />Liked Iterneries</Link><br /><br />
-                                                <Link to="/Saved" className="text-decoration-none text-capitalize linkhover"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faBookmark} />Saved Trip Plans</Link>
+                                                <Link to="/Liked" hidden className="text-decoration-none text-capitalize linkhover"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faThumbsUp} />Liked Iterneries</Link><br /><br />
+                                                <Link to="/Saved" hidden className="text-decoration-none text-capitalize linkhover"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faBookmark} />Saved Trip Plans</Link>
                                             </div>
                                             <hr />
                                             <a onClick={(e) => { logOut(e) }} className="dropdown-item bg-transparent text-center linkhover" href="#" id="btnlogout"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faArrowRightFromBracket} />Logout</a>
@@ -189,7 +190,7 @@ const TripNav = () => {
                                 )
                         ) :
                             (
-                                <button type="button" ref={loginbtnRef} className="btn btn-outline-primary py-2 px-4 shadow-none" data-toggle="modal" data-target="#SignupSigninModal" data-backdrop="false">Login/Signup</button>
+                                <button type="button" hidden ref={loginbtnRef} className="btn btn-outline-primary py-2 px-4 shadow-none" data-toggle="modal" data-target="#SignupSigninModal" data-backdrop="false"></button>
                             )
                     }
                 </div>

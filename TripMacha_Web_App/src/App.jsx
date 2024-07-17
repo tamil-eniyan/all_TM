@@ -23,7 +23,7 @@ function App() {
         <Router>
 
           {/* Navigation bar starts*/}
-          <section id="home">
+          <section id="home" hidden>
             <div className="container-fluid position-relative p-0">
 
               {/* Login/SignUp Modal */}
@@ -50,7 +50,7 @@ function App() {
                 {/* Recommendation Section ends */}
 
                 {/* Service Section starts */}
-                <section id="services">
+                <section hidden id="services">
                   <Services />
                 </section>
                 {/* Service Section ends */}
@@ -78,7 +78,7 @@ function App() {
             <Route exact path='/services' element={
               <>
                 {/* Service Section starts */}
-                <section id="services">
+                <section hidden id="services">
                   <Services />
                 </section>
                 {/* Service Section ends */}
@@ -111,7 +111,7 @@ function App() {
             <Route exact path='/Liked' element={
               <>
                 {/* Liked Section starts */}
-                <section id="Liked">
+                <section hidden id="Liked">
                   <Liked />
                 </section>
                 {/* Liked Section ends */}
@@ -121,7 +121,7 @@ function App() {
             <Route exact path='/Saved' element={
               <>
                 {/* Saved Section starts */}
-                <section id="Saved">
+                <section hidden id="Saved">
                   <Saved />
                 </section>
                 {/* Saved Section ends */}

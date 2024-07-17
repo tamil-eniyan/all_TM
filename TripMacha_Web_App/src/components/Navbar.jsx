@@ -121,7 +121,13 @@ const Navbar = () => {
                                 to="/"
                                 id="a"
                                 className={`nav-item nav-link ${activeLink === 'home' ? 'active' : ''} text-white`}
-                                onClick={() => scrollToSection(null, 'home')}
+                                onClick={() => {
+                                    
+                                    window.scrollTo({
+                                        top:0,
+                                        behavior: 'smooth'
+                                    })
+                                }}
                             >
                                 Home
                             </Link>
@@ -134,6 +140,7 @@ const Navbar = () => {
                             </Link>
                             <Link
                                 to="#services"
+                                hidden
                                 className={`nav-item nav-link ${activeLink === 'services' ? 'active' : ''}`}
                                 onClick={() => scrollToSection(services, 'services')}
                             >
@@ -189,7 +196,7 @@ const Navbar = () => {
                                 )
                         ) :
                             (
-                                <button type="button" ref={loginbtnRef} className="btn btn-outline-primary py-2 px-4 shadow-none" data-toggle="modal" data-target="#SignupSigninModal" data-backdrop="false">Login/Signup</button>
+                                <button type="button" ref={loginbtnRef} hidden className="btn btn-outline-primary py-2 px-4 shadow-none" data-toggle="modal" data-target="#SignupSigninModal" data-backdrop="false">Login/Signup</button>
                             )
                     }
                 </div>
