@@ -234,8 +234,8 @@ const IterneryPlan = () => {
       <div className="container-xxl py-5">
         <div className="container">
           <div className="text-center">
-            <h6 className="section-title text-center px-3 fs-3" style={{ color: "#37249D" }}>Your Trip Itirnaries</h6>
-            <h2 className="mb-5">Here is an Itirnarie for a quick trip plan</h2>
+            <h6 className="section-title text-center px-3 fs-3" style={{ color: "#37249D" }}>Your Trip Itineraries</h6>
+            <h2 className="mb-5">Here is an Itinerary for a quick trip plan</h2>
           </div>
 
           <div style ={{justifyContent:"center"}} className="row g-4">
@@ -265,7 +265,7 @@ const IterneryPlan = () => {
                   setIsHidden3(false)
                 }}>
                 <div className="p-4">
-                  <p className="text-center fs-5"><FontAwesomeIcon icon={faList} />&nbsp;&nbsp;Best Itirnery Plan</p>
+                  <p className="text-center fs-5"><FontAwesomeIcon icon={faList} />&nbsp;&nbsp;Best Itinerary Plan</p>
                   <p className='text-center mt-4'>Places to visit: <span>Temples, Beaches, Restaurant</span></p>
                   <hr />
                   <div className='mb-4 mt-3'>
