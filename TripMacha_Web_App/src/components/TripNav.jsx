@@ -106,14 +106,14 @@ const TripNav = () => {
     return (
         <>
             <ToastContainer />
-            <nav className="navbar navbar-expand-lg navbar-light left-50 px-lg-5 py-3 py-lg-0 shadow-sm">
+            <nav style={{justifyContent:'center'}} className="navbar navbar-expand-lg navbar-light left-50 px-lg-5 py-3 py-lg-0 shadow-sm">
                 <Link to="/" className="navbar-brand p-0">
                     <h1 className="text-primary m-0"><span style={{ color: '#37249D' }}><i className="fa fa-map-marked-alt me-3"></i>Trip</span><span style={{ color: "red" }}>Macha</span></h1>
                 </Link>
                 <button hidden className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span className="fa fa-bars"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarCollapse">
+                <div style={{justifyContent:'center' , textAlign:'center'}} className="collapse navbar-collapse" id="navbarCollapse">
                     <div className='navbox'>
                         <div className="navbar-nav ms-auto py-0">
                             <Link

@@ -34,9 +34,9 @@ const Iterneries = (props) => {
 
     return (
         <>
-            <h6 className="bg-white text-center px-3 fs-3 mt-5" style={{ color: "#37249D" }}>Quick Iternery Plan</h6>
-            <h2 className="mb-5 text-center">Here is your iternery plans</h2>
-            <div className="container py-5">
+            <h6 className="bg-white text-center px-3 fs-3 mt-5" style={{ color: "#37249D" }}>Quick Itirnery Plan</h6>
+            <h2 className="mb-5 text-center">Here is your Itirnery plans</h2>
+            <div  className="container py-5">
                 <div className="main-timeline-4 text-white" style={{ content: null }}>
                     {
                         response1 !== null ?

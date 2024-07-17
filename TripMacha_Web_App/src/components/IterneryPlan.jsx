@@ -234,14 +234,14 @@ const IterneryPlan = () => {
       <div className="container-xxl py-5">
         <div className="container">
           <div className="text-center">
-            <h6 className="section-title text-center px-3 fs-3" style={{ color: "#37249D" }}>Your Trip Iternaries</h6>
-            <h2 className="mb-5">Here are the Iternaries for a quick trip plan</h2>
+            <h6 className="section-title text-center px-3 fs-3" style={{ color: "#37249D" }}>Your Trip Itirnaries</h6>
+            <h2 className="mb-5">Here is an Itirnarie for a quick trip plan</h2>
           </div>
 
-          <div className="row g-4">
+          <div style ={{justifyContent:"center"}} className="row g-4">
 
             {/* Itenary plan 1 */}
-            <div className="col-lg-4 col-sm-6" style={{left:'35%'}}>
+            <div className="col-lg-4 col-sm-6" >
               <div className="iternery-item rounded pt-3" style={{ backgroundColor: bgColor1, color: txtColor1 }}
                 onClick={() => {
                   if (bgColor1 == 'white') {
@@ -274,8 +274,8 @@ const IterneryPlan = () => {
                         (<div className='float-right' onClick={liked1}><FontAwesomeIcon icon={likeIcon1} />&nbsp;&nbsp;{(likeIcon1 === faThumbsUp) ? <>Like</> : <>Dislike</>}</div>)
                         : (
                           <>
-                            <div className='float-right' onClick={liked1}><FontAwesomeIcon icon={likeIcon1} />&nbsp;&nbsp;{(likeIcon1 === faThumbsUp) ? <>Like</> : <>Dislike</>}</div>
-                            <div className='float-left' onClick={saved1}><FontAwesomeIcon icon={savedIcon1} />&nbsp;&nbsp;{(savedIcon1 === faBookmark) ? <>Save Plan</> : <>Unsave Plan</>}</div>
+                            <div className='float-right'hidden onClick={liked1}><FontAwesomeIcon icon={likeIcon1} />&nbsp;&nbsp;{(likeIcon1 === faThumbsUp) ? <>Like</> : <>Dislike</>}</div>
+                            <div className='float-left' hidden onClick={saved1}><FontAwesomeIcon icon={savedIcon1} />&nbsp;&nbsp;{(savedIcon1 === faBookmark) ? <>Save Plan</> : <>Unsave Plan</>}</div>
                           </>
                         )
                     }
