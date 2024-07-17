@@ -1,5 +1,6 @@
 import React from 'react'
 import googleImage from '../assets/img/Google Play.png'
+import gangliaImg from '../assets/img/image.png'
 import appleImage from '../assets/img/Play Store.png'
 
 const Footer = () => {
@@ -39,8 +40,9 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div hidden className="col-lg-3 col-md-6">
-                            <h4 className="text-white mb-3">Discover Our app</h4>
+                        <div  className="col-lg-3 col-md-6">
+                            <img src={gangliaImg} alt="" />
+                            {/* <h4 className="text-white mb-3">Discover Our app</h4>
                             <div className="row g-2 pt-2">
                                 <div className="col-7">
                                     <a href="#" target="_blank" className="glink shadow-none"><img src={googleImage} width="150px" height="65px" alt="Google Play Store" /></a>
@@ -49,7 +51,7 @@ const Footer = () => {
                                     <a href="#" target="_blank" className="glink shadow-none"><img src={appleImage} style={{ backgroundColor: "white", borderRadius: "6px", marginLeft: "9px", border: "1px solid grey" }} width="133px" height="43px" alt="App Store" />
                                     </a>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -61,7 +63,7 @@ const Footer = () => {
                                 <div className="footer-menu">
                                     <a href="#home" className="flink shadow-none">Home</a>
                                     <a href="https://www.ganglia.in/" target="_blank" className="flink shadow-none">Queries</a>
-                                    <a href="#services" className="flink shadow-none">Services</a>
+                                    {/* <a href="#services" className="flink shadow-none">Services</a> */}
                                 </div>
                             </div>
                         </div>
